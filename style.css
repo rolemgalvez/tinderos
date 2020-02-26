@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-  --primary-color: #F24236;
-  --dark-primary-color: #0D2A37;
-  --light-primary-color: #90C3E5;
   --animate-speed: 2s;
 }
 
@@ -26,9 +23,19 @@ body {
   height: 100vh;
 }
 
-.page h1 {
-  font-size: 4rem;
-  margin: 1rem 0 1rem 0;
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 2.1rem;
+  margin: 0 0 1rem 0;
+}
+
+.logo img {
+  margin: -15px;
 }
 
 .page h3 {
@@ -40,6 +47,11 @@ body {
   font-size: 1.1rem;
   line-height: 1.5;
   margin: 2rem 0;
+}
+
+#home p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -62,54 +74,24 @@ body {
 }
 
 #home { 
-  background: var(--primary-color); 
+  background: #F24236; 
   color: white;
 }
 
 .bg-tindero-1 { background: url('./img/chito-miranda.jpg') no-repeat center center/cover; }
-.bg-tindero-1:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(245,247,73,0.9);
-}
+.bg-tindero-1:before {  background: rgba(245,247,73,0.9); }
 
 .bg-tindero-2 { background: url('./img/jay-contreras.png') no-repeat center center/cover; }
-.bg-tindero-2:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(246,245,174,0.9);
-}
+.bg-tindero-2:before { background: rgba(246,245,174,0.9); }
 
 .bg-tindero-3 { background: url('./img/kean-cipriano.jpg') no-repeat center center/cover; }
-.bg-tindero-3:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(46,134,171,0.9);
-}
+.bg-tindero-3:before { background: rgba(46,134,171,0.9); }
 
 .bg-tindero-4 { background: url('./img/monty-macalino.jpg') no-repeat center center/cover; }
-.bg-tindero-4:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(86,85,84,0.9);
-}
+.bg-tindero-4:before { background: rgba(86,85,84,0.9); }
 
 .bg-tindero-5 { background: url('./img/zel-bautista.jpg') no-repeat center center/cover; }
-.bg-tindero-5:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(173,122,153,0.9);
-}
+.bg-tindero-5:before {  background: rgba(173,122,153,0.9); }
 
 .bg {
   width: 100%;
@@ -119,6 +101,13 @@ body {
   left: 1;
   opacity: 0.5;
   z-index: -1;
+}
+
+.bg:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
 }
 
 img {
