@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --primary-color: #B5D2E5;
+  --dark-primary-color: #0D2A37;
+  --light-primary-color: #90C3E5;
+  --animate-speed: 2s;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4rem;
+  background: var(--primary-color);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0;
+  height: 100vh;
+}
+
+.page h1 {
+  font-size: 4rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.page h3 {
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+}
+
+.page p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 0.5rem 2rem;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn-dark {
+  background: black;
+  color: white;
+}
+
+.btn-dark:hover {
+  background: white;
+  color: black;
+}
+
+/* #home { background: var(--primary-color); } */
+
+.bg-tindero-1 { background: url('./img/chito-miranda.jpg') no-repeat center center/cover; }
+.bg-tindero-2 { background: url('./img/jay-contreras.png') no-repeat center center/cover; }
+.bg-tindero-3 { background: url('./img/kean-cipriano.jpg') no-repeat center center/cover; }
+.bg-tindero-4 { background: url('./img/monty-macalino.jpg') no-repeat center center/cover; }
+.bg-tindero-5 { background: url('./img/zel-bautista.jpg') no-repeat center center/cover; }
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1;
+  left: 1;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+img {
+  height: 200px;
+  margin: 0;
+}
